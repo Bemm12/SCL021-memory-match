@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Match</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="containerCover1">
+      <header>
+        <div class="containerHeader">
+          <img src="imagenes/memorycartoons.png" alt="memory cartoons" />
+        </div>
+      </header>
+      <main>
+        <div class="containerCover2">
+          <div class="cover">
+            <div class="inputText">
+              <div class="text">
+                <h2>¡Bienvenid@ a Memory Cartoons</h2>
+                <h2>esperamos te diviertas!</h2>
+              </div>
+              <input
+                class="input"
+                type="text"
+                id="name"
+                placeholder="Ingresa tu nombre"
+                autocomplete="off"
+              />
+              <div class="text">
+                <h2>Elige el nivel de dificultad para jugar.</h2>
+              </div>
+              <div class="buttonCover">
+                <button type="button" class="button" id="facil">Fácil</button>
+                <button type="button" class="button" id="medio">Medio</button>
+                <button type="button" class="button" id="dificil">
+                  Difícil
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Sección Fácil -->
+    <section id="easySection">
+      <div class="instructionText">
+        <div class="greeting" id="hiEs">¡Hola !</div>
+        <h4>Has seleccionado el Nivel Fácil</h4>
+        <h4>Selecciona dos cartas para ver si hacen match.</h4>
+      </div>
+    </section>
+    <!-- Sección Medio -->
+    <section id="mediumSection">
+      <div class="instructionText">
+        <!--Incluido Usuario-->
+        <div class="greeting" id="hiMs">¡Hola !</div>
+        <!--Incluido Usuario-->
+        <h4>Ha seleccionado el Nivel Medio.</h4>
+        <h4>Selecciona dos cartas para ver si hacen match.</h4>
+      </div>
+    </section>
+    <!-- Sección Difícil -->
+    <section id="hardSection">
+      <div class="instructionText">
+        <!--Incluido Usuario-->
+        <div class="greeting" id="hiHs">¡Hola !</div>
+        <!--Incluido Usuario-->
+        <h4>Ha seleccionado el Nivel Difícil.</h4>
+        <h4>Selecciona dos cartas para ver si hacen match.</h4>
+      </div>
+    </section>
+    <!-- Sección Ganaste -->
+    <section id="win" class="win">
+      <div class="winGame">
+        <img src="imagenes/ganaste.png" alt="ganaste" />
+        <img src="imagenes/gifganaste.gif" alt="ganaste" />
+      </div>
+      <div class="buttonReplay">
+        <button
+          type="button"
+          class="button"
+          onclick="location.href='index.html';"
+        >
+          Volver a jugar
+        </button>
+      </div>
+    </section>
+    <!-- Sección Perdiste -->
+    <!-- <section id="perdiste">
+      <center>
+        <img
+          src="imagenes/gameover.png"
+          alt="perdiste"
+          width="300"
+          height="100"
+        />
+        <br />
+        <img src="imagenes/perdiste.gif" alt="Perdiste" />
+        <button
+          type="button"
+          class="boton"
+          onclick="location.href='index.html';"
+        >
+          volver a jugar
+        </button>
+    </section> -->
+    <!-- Juego -->
+    <main id="game">
+      <div class="audio">
+        <audio
+          src="utilities/sounds/intro.mp3"
+          autoplau
+          type="audio/mp3"
+          controls
+          loop
+        ></audio>
+      </div>
+      <div id="root" class="root"></div>
+      <div class="buttonReplay">
+        <button
+          type="button"
+          class="button"
+          onclick="location.href='index.html';"
+        >
+          Volver a jugar
+        </button>
+      </div>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
